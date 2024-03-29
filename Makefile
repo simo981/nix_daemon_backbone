@@ -1,5 +1,5 @@
-CFLAGS = -O3
-CC = gcc
+CFLAGS = -Ofast
+CC = clang
 TARGET = DAEMON
 LINK = 
 OBJ = main.o
@@ -12,4 +12,4 @@ $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm *.o $(TARGET)
+	rm *.o $(TARGET) 2>/dev/null

@@ -10,7 +10,6 @@
 #include <syslog.h>
 #include <unistd.h>
 #include <sys/syslog.h>
-#include <linux/close_range.h>
 
 void sigterm_handler(int);
 void sighup_handler(int);
